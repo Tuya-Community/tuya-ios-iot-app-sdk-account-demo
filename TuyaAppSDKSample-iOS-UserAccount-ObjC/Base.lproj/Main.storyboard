@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BTC-GC-9p4">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login-->
+        <scene sceneID="i5n-2D-qQC">
+            <objects>
+                <navigationController title="Login" automaticallyAdjustsScrollViewInsets="NO" id="BTC-GC-9p4" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jR8-fi-NEe">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ZgS-l4-KmV" kind="relationship" relationship="rootViewController" id="AVP-Ou-fdA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OT8-FS-rV9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-944" y="146"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="uY8-vz-BDD">
+            <objects>
+                <viewController id="ZgS-l4-KmV" customClass="TYLoginViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OMC-Yq-HAX">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="3g7-OS-Igx">
+                                <rect key="frame" x="147" y="275" width="96" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="bzI-8f-muN"/>
+                                    <constraint firstAttribute="height" constant="40" id="oXf-j2-aU7"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPh-3c-ytI">
+                                <rect key="frame" x="88" y="338" width="214" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="dVG-gA-qqN"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Account Manager">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="28"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Account" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3dx-mt-fgE">
+                                <rect key="frame" x="54" y="405" width="283" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="57" id="3K1-Ve-OCr"/>
+                                    <constraint firstAttribute="height" constant="57" id="FCM-7O-vbG"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="57" id="cTJ-VB-lCq"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="dSA-4V-BqQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="olp-c3-Kf7"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="olp-c3-Kf7" firstAttribute="trailing" secondItem="3dx-mt-fgE" secondAttribute="trailing" constant="53" id="6yO-Ps-cxr"/>
+                            <constraint firstItem="3g7-OS-Igx" firstAttribute="leading" secondItem="olp-c3-Kf7" secondAttribute="leading" constant="147" id="LtF-dd-YA2"/>
+                            <constraint firstItem="3dx-mt-fgE" firstAttribute="leading" secondItem="olp-c3-Kf7" secondAttribute="leading" constant="54" id="TTF-pf-iAp"/>
+                            <constraint firstItem="WPh-3c-ytI" firstAttribute="leading" secondItem="olp-c3-Kf7" secondAttribute="leading" constant="88" id="XMJ-i9-ktc"/>
+                            <constraint firstItem="3g7-OS-Igx" firstAttribute="top" secondItem="olp-c3-Kf7" secondAttribute="top" constant="187" id="aX5-5q-pNW"/>
+                            <constraint firstItem="olp-c3-Kf7" firstAttribute="trailing" secondItem="WPh-3c-ytI" secondAttribute="trailing" constant="88" id="b1l-Pa-XSX"/>
+                            <constraint firstItem="olp-c3-Kf7" firstAttribute="trailing" secondItem="3dx-mt-fgE" secondAttribute="trailing" constant="53" id="iQG-TL-slG"/>
+                            <constraint firstItem="olp-c3-Kf7" firstAttribute="trailing" secondItem="3g7-OS-Igx" secondAttribute="trailing" constant="147" id="k2B-Tw-06e"/>
+                            <constraint firstItem="3dx-mt-fgE" firstAttribute="leading" secondItem="olp-c3-Kf7" secondAttribute="leading" constant="54" id="sT0-s4-J1d"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="TXP-HQ-qAt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GOt-tb-iEN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.307692307692307" y="150"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="80" height="40"/>
+    </resources>
+</document>

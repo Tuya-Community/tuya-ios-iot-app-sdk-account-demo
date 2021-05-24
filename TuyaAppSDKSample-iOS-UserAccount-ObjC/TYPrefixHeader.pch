@@ -1,0 +1,27 @@
+//
+//  TYPrefixHeader.pch
+//  TuyaAppSDKSample-iOS-UserAccount-ObjC
+//
+//  Copyright (c) 2014-2021 Tuya Inc. (https://developer.tuya.com/)
+
+
+#ifndef TYPrefixHeader_pch
+#define TYPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#import <TuyaSmartHomeKit/TuyaSmartKit.h>
+
+#import "TYAlert.h"
+#import "NSPredicate+TYFormatCheck.h"
+#import "TYBaseViewController.h"
+
+
+
+#define SCREEN_WIDTH   [UIScreen mainScreen].bounds.size.width
+#define SCREENH_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define SCREEN_SIZE    [UIScreen mainScreen].bounds.size
+
+#endif /* TYPrefixHeader_pch */
